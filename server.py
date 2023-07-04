@@ -2,7 +2,7 @@ import socket
 
 import config
 import lib.my_logger as my_logger
-from lib.stellarium_utils import process_stellarium_data
+from lib.stellarium_utils import process_stellarium_data, update_stellarium
 from lib.dwarf_utils import perform_goto
 
 # create socket
@@ -26,4 +26,7 @@ while True:
     data = process_stellarium_data(raw_data)
 
     result = perform_goto(data["ra"], data["dec"])
+    if result == "ok":
+        update_stellarium(data["ra_int"], data["dec_int"], new_socket)
+
     new_socket.close()

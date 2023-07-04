@@ -73,3 +73,9 @@ def process_stellarium_data(raw_data):
         "dec_int": dec_int,
         "dec": formatted_data["dec"],
     }
+
+
+def update_stellarium(ra_int, dec_int, connection):
+    timestamp = math.floor(time.time())
+    reply = struct.pack("3iIii", 24, 0, timestamp, ra_int, dec_int, 0)
+    connection.send(reply)
