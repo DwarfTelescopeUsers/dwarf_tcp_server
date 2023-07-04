@@ -23,9 +23,13 @@ while True:
     if not raw_data:
         break
 
+    # process data from Stellarium to get RA/Dec
     data = process_stellarium_data(raw_data)
 
+    # send goto command to DWARF II
     result = perform_goto(data["ra"], data["dec"])
+
+    # add DWARF II to Stellarium's sky map
     if result == "ok":
         update_stellarium(data["ra_int"], data["dec_int"], new_socket)
 
