@@ -24,4 +24,6 @@ while True:
         break
 
     data = process_stellarium_data(raw_data)
+
+    result = perform_goto(data["ra"], data["dec"])
     new_socket.close()
