@@ -27,7 +27,7 @@ while True:
     data = process_stellarium_data(raw_data)
 
     # send goto command to DWARF II
-    result = perform_goto(data["ra"], data["dec"])
+    result = perform_goto(data["ra_number"], data["dec_number"])
 
     # add DWARF II to Stellarium's sky map
     if result == "ok":
