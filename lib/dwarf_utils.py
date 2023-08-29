@@ -9,7 +9,9 @@ def perform_goto(ra, dec):
 
     response = connect_socket(payload)
 
-    if response["interface"] == payload["interface"]:
+    if response: 
+
+      if response["interface"] == payload["interface"]:
         if response["code"] == 0:
             log.debug("Goto success")
             return "ok"
@@ -19,8 +21,10 @@ def perform_goto(ra, dec):
             log.error("Goto or correction bump limit")
         else:
             log.error("Error:", response)
-    else:
+      else:
         log.error("Dwarf API:", response)
+    else:
+        log.error("Dwarf API:", "Dwarf II not connected")
 
 
 def perform_camera_status():

@@ -1,7 +1,5 @@
 # Dwarf II TCP server
 
-**NOTE: This is a work in progress. It's been cloudy, so I haven't tested this code yet.**
-
 This software lets you send goto commands to the Dwarf II using Stellarium's Telescope Control.
 
 Requires:
@@ -22,8 +20,19 @@ This software setups up a TCP server. When you select an object Stellarium, and 
 
 3. Install libraries
 
+On Linux  or WSL for Windows : 
+
 ```
 pip install -r requirements.txt
+```
+
+On Windows : 
+
+you can install Python 3.11 (search on Microsoft Store)
+open a command prompt on the directory and do :  
+
+```
+python3 -m pip install -r requirements.txt
 ```
 
 4. Copy `config.sample.py`, and rename it to `config.py`.
@@ -31,6 +40,8 @@ pip install -r requirements.txt
 The `HOST` and `PORT` should be the same as those used in Stellarium Telescope Plugin.
 
 Fill in your `LATITUDE` and `LONGITUDE`.
+
+It Seems that you need to reverse the sign of the longitude. If positive set it negative and conversely.
 
 If you are using the Dwarf wifi, the `DWARF_IP` is 192.168.88.1. If you are using Dwarf II in STA mode, then get the IP for your Dwarf II.
 
@@ -43,4 +54,14 @@ If you are using the Dwarf wifi, the `DWARF_IP` is 192.168.88.1. If you are usin
 python server.py
 ```
 
-6. Select an object in Stellarium, and issue a slew command. The Dwarf II should move to that object.
+On Windows : 
+
+```
+python3 server.py
+```
+
+6. Start the dwarf II and use the mobile app and go to Astro Mode and do the calibration
+
+7. Select an object in Stellarium, and issue a slew command. (shortcut : Alt + 1). The Dwarf II should move to that object.
+
+**NOTE: If the server disconnects from Stellarium, You can try reconnect on the cmd window by typing Y otherwise the program will stop **
