@@ -5,6 +5,8 @@ import lib.my_logger as my_logger
 from lib.stellarium_utils import process_stellarium_data, update_stellarium
 from lib.dwarf_utils import perform_goto
 
+let nbDeconnect = 3
+
 while True:
 
     my_logger.debug(f"Waiting Connection to Stellarium : {config.HOST}")
@@ -41,8 +43,13 @@ while True:
 
     my_logger.debug(f"Disconnected from Stellarium : {addr}")
 
-    restart = input("Restart? [Y/n]")
+    nbDeconnect -= 1
+
+    if (nbDeconnect <= 0):
+        restart = input("Restart? [Y/n]")
     
-    if restart != "Y" and restart != "y":
-        my_logger.debug("End of Server")
-        break;
+        if restart != "Y" and restart != "y":
+            my_logger.debug("End of Server")
+            break;
+        else:
+            nbDeconnect = 3
