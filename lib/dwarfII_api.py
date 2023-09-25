@@ -9,9 +9,6 @@ def ws_uri(dwarf_ip):
     return f"ws://{dwarf_ip}:9900"
 
 
-def now():
-    return str(datetime.datetime.now()).split(".")[0]
-
 def nowUTC():
     return str(datetime.datetime.utcnow()).split(".")[0]
 

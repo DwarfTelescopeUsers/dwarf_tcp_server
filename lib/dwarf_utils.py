@@ -5,7 +5,8 @@ import lib.my_logger as log
 
 
 def perform_goto(ra, dec):
-    payload = d2.goto_target(config.LATITUDE, config.LONGITUDE, ra, dec)
+    # Inverse LONGITUDE for DwarfII !!!!!!!
+    payload = d2.goto_target(config.LATITUDE, - config.LONGITUDE, ra, dec)
 
     response = connect_socket(payload)
 
