@@ -16,3 +16,4 @@ def connect_socket(payload):
             return json.loads(message)
     except TimeoutError:
         my_logger.error("Could not connect to websocket")
+        return False
