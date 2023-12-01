@@ -4,7 +4,6 @@ import math
 
 import lib.my_logger as my_logger
 
-
 def process_ra_dec_int(ra_int, dec_int):
     h = ra_int
     d = math.floor(0.5 + dec_int * (360 * 3600 * 1000 / 4294967296.0))
@@ -74,27 +73,34 @@ def format_ra_dec(ra_int, dec_int):
 
 
 def process_stellarium_data(raw_data):
-    data = struct.unpack("3iIi", raw_data)
-    my_logger.debug("data from Stellarium >>", data)
+    my_logger.debug("data from Stellarium >>", raw_data)
+    try:
+        data = struct.unpack("3iIi", raw_data)
+        my_logger.debug("data from Stellarium >>", data)
 
-    ra_int = data[3]
-    dec_int = data[4]
-    formatted_data = format_ra_dec(ra_int, dec_int)
-    my_logger.debug("ra: " + formatted_data["ra"] + ", dec: " + formatted_data["dec"])
+        ra_int = data[3]
+        dec_int = data[4]
+        formatted_data = format_ra_dec(ra_int, dec_int)
+        my_logger.debug("ra: " + formatted_data["ra"] + ", dec: " + formatted_data["dec"])
 
-    data_number = process_ra_dec(ra_int, dec_int)
-    ra_number = data_number["ra_number"]
-    dec_number = data_number["dec_number"]
-    my_logger.debug("ra: " + f"{ra_number}" + ", dec: " + f"{dec_number}")
+        data_number = process_ra_dec(ra_int, dec_int)
+        ra_number = data_number["ra_number"]
+        dec_number = data_number["dec_number"]
+        my_logger.debug("ra: " + f"{ra_number}" + ", dec: " + f"{dec_number}")
 
-    return {
-        "ra_int": ra_int,
-        "ra": formatted_data["ra"],
-        "ra_number": ra_number,
-        "dec_int": dec_int,
-        "dec": formatted_data["dec"],
-        "dec_number": dec_number,
-    }
+        return {
+            "ra_int": ra_int,
+            "ra": formatted_data["ra"],
+            "ra_number": ra_number,
+            "dec_int": dec_int,
+            "dec": formatted_data["dec"],
+            "dec_number": dec_number,
+        }
+
+    except struct.error:
+        # If a struct.error occurs, the data is not in the expected structure format
+        my_logger.debug("data from Stellarium Mobile >>", raw_data)
+        return False
 
 
 def update_stellarium(ra_int, dec_int, connection):

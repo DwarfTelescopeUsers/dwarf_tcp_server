@@ -41,6 +41,8 @@ The `HOST` and `PORT` should be the same as those used in Stellarium Telescope P
 
 Fill in your `LATITUDE` and `LONGITUDE`  (LONGITUDE is negative west of Greenwich)
 
+Add also your `TIMEZONE`, it's need when you are using the Stellarium Mobile App
+
 If you are using the Dwarf wifi, the `DWARF_IP` is 192.168.88.1. If you are using Dwarf II in STA mode, then get the IP for your Dwarf II.
 
 `DEBUG = True` will print all the messages sent between Stellarium and Dwarf II. Set to `DEBUG = False`
@@ -61,5 +63,7 @@ python3 server.py
 6. Start the dwarf II and use the mobile app and go to Astro Mode and do the calibration
 
 7. Select an object in Stellarium, and issue a slew command. (shortcut for Windows is Alt + number, See Stellarium documentation, Command + number for Mac). The Dwarf II should move to that object.
+
+8. You can also use the Stellarium Plus Mobile App with the remote Telescopte function, Select an object in Stellarium, and issue a goto command with the remote control. The Dwarf II should move to that object.
 
 **NOTE: If the server disconnects from Stellarium, You can try reconnect on the cmd window by typing Y otherwise the program will stop **

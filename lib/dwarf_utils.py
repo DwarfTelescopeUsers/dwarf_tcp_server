@@ -4,7 +4,7 @@ import config
 import lib.my_logger as log
 
 
-def perform_goto(ra, dec):
+def perform_goto(ra, dec, result_queue):
     # Inverse LONGITUDE for DwarfII !!!!!!!
     payload = d2.goto_target(config.LATITUDE, - config.LONGITUDE, ra, dec)
 
@@ -15,6 +15,7 @@ def perform_goto(ra, dec):
       if response["interface"] == payload["interface"]:
         if response["code"] == 0:
             log.debug("Goto success")
+            result_queue.put("ok")
             return "ok"
         elif response["code"] == -45:
             log.error("Target below horizon")
@@ -27,6 +28,7 @@ def perform_goto(ra, dec):
     else:
         log.error("Dwarf API:", "Dwarf II not connected")
 
+    result_queue.put(False)
 
 def perform_camera_status():
     payload = d2.cameraWorkingState()
