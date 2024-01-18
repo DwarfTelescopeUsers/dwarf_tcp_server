@@ -72,7 +72,13 @@ while True:
 
         if (data): # For Stellarium PC
             # send goto command to DWARF II
-            result = perform_goto(data["ra_number"], data["dec_number"], result_queue)
+            if hasattr(config, 'VERSION_API'):
+                if (config.VERSION_API == 1):
+                    result = perform_gotoV1(data["ra_number"], data["dec_number"], result_queue)
+                else:
+                    result = perform_goto(data["ra_number"], data["dec_number"], result_queue)
+            else:
+                result = perform_goto(data["ra_number"], data["dec_number"], result_queue)
 
             # add DWARF II to Stellarium's sky map
             if result == "ok":
@@ -234,7 +240,10 @@ while True:
                         dwarf_goto_thread_started = True
                         dwarf_ra_deg = ra_deg;
                         dwarf_dec_deg = dec_deg;
-                        dwarf_goto_thread = threading.Thread(target=perform_goto, args=(dwarf_ra_deg, dwarf_dec_deg, result_queue))
+                        if (config.VERSION_API == 1):
+                            dwarf_goto_thread = threading.Thread(target=perform_gotoV1, args=(dwarf_ra_deg, dwarf_dec_deg, result_queue))
+                        else:
+                            dwarf_goto_thread = threading.Thread(target=perform_goto, args=(dwarf_ra_deg, dwarf_dec_deg, result_queue))
                         dwarf_goto_thread.start()
 
                     send_data = b'#'  

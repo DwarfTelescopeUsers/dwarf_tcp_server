@@ -34,7 +34,6 @@ def goto_target(latitude, longitude, rightAscension, declination, planet=None):
 
     return options
 
-
 def cameraWorkingState():
     return {
         "interface": statusWorkingStateTelephotoCmd,
