@@ -3,6 +3,9 @@ import lib.dwarfII_api as d2
 import config
 import lib.my_logger as log
 import proto.astro_pb2 as astro
+import proto.system_pb2 as system
+import time
+import math
 
 def perform_gotoV1(ra, dec, result_queue):
     # Inverse LONGITUDE for DwarfII !!!!!!!
@@ -34,7 +37,25 @@ def perform_gotoV1(ra, dec, result_queue):
 global id_target
 id_target = 0
 
+global do_time
+do_time = False
+
+global do_timezone
+do_timezone = False
+
+
 def perform_goto(ra, dec, result_queue):
+
+    global do_time
+    global do_timezone
+
+    if (not do_time):
+        perform_time()
+        do_time = True
+
+    if (not do_time):
+        perform_timezone()
+        do_timezone = True
 
     # Add an number to target Stellarium to have a different target name each time
     global id_target
@@ -67,3 +88,52 @@ def perform_goto(ra, dec, result_queue):
         log.error("Dwarf API:", "Dwarf II not connected")
 
     result_queue.put(False)
+
+def perform_time():
+
+    # SET TIME
+    module_id = 4  # MODULE_SYSTEM
+    type_id = 0; #REQUEST
+
+    ReqSetTime_message = system.ReqSetTime()
+    ReqSetTime_message.timestamp = math.floor(time.time())
+
+    command = 13000 #CMD_SYSTEM_SET_TIME
+    response = connect_socket(ReqSetTime_message, command, type_id, module_id)
+
+    if response is not False: 
+
+      if response == 0:
+          log.debug("Set Time success")
+          return True
+      else:
+          log.error("Error:", response)
+    else:
+        log.error("Dwarf API:", "Dwarf II not connected")
+
+    return False
+
+def perform_timezone():
+
+    # SET TIMEZONE
+    module_id = 4  # MODULE_SYSTEM
+    type_id = 0; #REQUEST
+
+    ReqSetTimezone_message = system.ReqSetTimezone()
+    ReqSetTimezone_message.timezone = read_timezone()
+
+    command = 13001 #CMD_SYSTEM_SET_TIME_ZONE
+    response = connect_socket(ReqSetTimezone_message, command, type_id, module_id)
+
+    if response is not False: 
+
+      if response == 0:
+          log.debug("Set TimeZone success")
+          return True
+      else:
+          log.error("Error:", response)
+    else:
+        log.error("Dwarf API:", "Dwarf II not connected")
+
+    return False
+

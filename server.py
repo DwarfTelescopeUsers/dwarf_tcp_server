@@ -224,11 +224,15 @@ while True:
                     my_logger.debug(f"Receive Goto Command : RA {raw_data[1:7]}")
                     my_logger.debug(f"Receive Goto Command : DEC {raw_data[10:16]}")
                     ra_data =  int(raw_data[1:7], base=16)
-                    ra_deg = (ra_data / 16777216) * 360
+                    if (ra_data < 0):
+                        ra_data = 16777216 + ra_data
+                    ra_deg = (ra_data / 16777216) * 360 / 15
+                    my_logger.debug(f"Decode Ra:{ra_deg}")
                     dec_data =  int(raw_data[10:16], base=16)
                     dec_deg = (dec_data / 16777216) * 360
-                    if (dec_deg > 90):
-                        dec_deg = 90 - dec_deg
+                    my_logger.debug(f"Decode Dec:{dec_deg}")
+                    if (dec_deg > 180):
+                        dec_deg = dec_deg - 360
                     my_logger.debug(f"Receive Goto Command : Ra:{ra_deg} Dec:{dec_deg}")
 
                     if (dwarf_goto_thread_started):
