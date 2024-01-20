@@ -6,6 +6,9 @@ def debug(*messages):
         for message in messages:
             print(message)
 
+def info(*messages):
+    for message in messages:
+        print(message)
 
 def error(*messages):
     for message in messages:

@@ -17,6 +17,21 @@ import lib.my_logger as my_logger
 def ws_uri(dwarf_ip):
     return f"ws://{dwarf_ip}:9900"
 
+######################
+# old version V1
+######################
+def connect_socketV1(payload):
+    try:
+        with connect(ws_uri(config.DWARF_IP)) as websocket:
+            my_logger.debug("data to API >>", json.dumps(payload, indent=2))
+            websocket.send(json.dumps(payload))
+
+            message = websocket.recv()
+            return json.loads(message)
+    except TimeoutError:
+        my_logger.error("Could not connect to websocket")
+        return False
+
 def getErrorCodeValueName(ErrorCode):
 
     try:

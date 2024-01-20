@@ -47,7 +47,7 @@ nbDeconnect = 10
 
 while True:
 
-    my_logger.debug(f"Waiting Connection to Stellarium : {config.HOST}")
+    my_logger.info(f"Waiting Connection to Stellarium : {config.HOST}")
 
     # create socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -61,7 +61,7 @@ while True:
     while True:
         # create new socket to interact with client
         new_socket, addr = sock.accept()
-        my_logger.debug(f"Connected by {addr}")
+        my_logger.info(f"Connected by {addr}")
 
         raw_data = new_socket.recv(1024)
         if not raw_data:
@@ -220,9 +220,9 @@ while True:
 
                 # GOTO Command
                 if (raw_data[0] == ord('r')):
-                    my_logger.debug(f"Receive Goto Command : {raw_data}")
-                    my_logger.debug(f"Receive Goto Command : RA {raw_data[1:7]}")
-                    my_logger.debug(f"Receive Goto Command : DEC {raw_data[10:16]}")
+                    my_logger.info(f"Receive Goto Command : {raw_data}")
+                    my_logger.info(f"Receive Goto Command : RA {raw_data[1:7]}")
+                    my_logger.info(f"Receive Goto Command : DEC {raw_data[10:16]}")
                     ra_data =  int(raw_data[1:7], base=16)
                     if (ra_data < 0):
                         ra_data = 16777216 + ra_data
@@ -233,10 +233,10 @@ while True:
                     my_logger.debug(f"Decode Dec:{dec_deg}")
                     if (dec_deg > 180):
                         dec_deg = dec_deg - 360
-                    my_logger.debug(f"Receive Goto Command : Ra:{ra_deg} Dec:{dec_deg}")
+                    my_logger.info(f"Receive Goto Command : Ra:{ra_deg} Dec:{dec_deg}")
 
                     if (dwarf_goto_thread_started):
-                        my_logger.debug(f"Receive Goto Command : Goto is still Processing Wait...")
+                        my_logger.info(f"Receive Goto Command : Goto is still Processing Wait...")
                     else:
                         goto = True
 
