@@ -79,9 +79,10 @@ class WebSocketClient:
         self.ping_task = None
         self.receive_task = None
         self.abort_tasks = None
-        self.abort_timeout = 90
+        self.abort_timeout = 240
         self.stop_task = asyncio.Event()
         self.wait_pong = False
+        self.stopcalibration = False
 
         # TEST_CALIBRATION : Test Calibration Packet or Goto Packet
         # Test Mode : Calibration Packet => TEST_CALIBRATION = True
@@ -237,14 +238,19 @@ class WebSocketClient:
                                 my_logger.debug(f">> {getAstroStateName(ResNotifyStateAstroCalibration_message.state)}")
                                 my_logger.debug(f"receive notification times >> {ResNotifyStateAstroCalibration_message.plate_solving_times}")
 
-                                # ASTRO_STATE_IDLE = 0; // Idle state Only when Success
+                                # ASTRO_STATE_IDLE = 0; // Idle state Only when Success or Previous Error
                                 if (ResNotifyStateAstroCalibration_message.state == notify.ASTRO_STATE_IDLE):
-                                    my_logger.debug("ASTRO CALIBRATION OK >> EXIT")
+                                    if (self.stopcalibration):
+                                        self.result = protocol.CODE_ASTRO_CALIBRATION_FAILED
+                                        await asyncio.sleep(5)
+                                        print("Error CALIBRATION CODE_ASTRO_CALIBRATION_FAILED")
+                                    else :
+                                        self.result = "ok"
+                                        my_logger.debug("ASTRO CALIBRATION OK >> EXIT")
+                                        print("Success ASTRO CALIBRATION OK")
                                     # Signal the ping and receive functions to stop
                                     self.stop_task.set()
-                                    self.result = "ok"
                                     await asyncio.sleep(5)
-                                    print("Success ASTRO CALIBRATION OK")
                                 else:
                                     print("Continue Decoding CMD_NOTIFY_STATE_ASTRO_CALIBRATION")
 
@@ -300,11 +306,7 @@ class WebSocketClient:
                                 # CODE_ASTRO_CALIBRATION_FAILED = -11504; // Calibration failed
                                 if (ComResponse.code == -11504):
                                     my_logger.debug("Error CALIBRATION >> EXIT")
-                                    # Signal the ping and receive functions to stop
-                                    self.stop_task.set()
-                                    self.result = protocol.CODE_ASTRO_CALIBRATION_FAILED
-                                    await asyncio.sleep(5)
-                                    print("Error CALIBRATION CODE_ASTRO_CALIBRATION_FAILED")
+                                    self.stopcalibration = True
 
                             # CMD_SYSTEM_SET_TIME = 13000; // Set the system time
                             elif (WsPacket_message.cmd==protocol.CMD_SYSTEM_SET_TIME):
@@ -481,6 +483,10 @@ class WebSocketClient:
             if ((self.command == protocol.CMD_ASTRO_START_GOTO_DSO) or (self.command == protocol.CMD_ASTRO_START_GOTO_SOLAR_SYSTEM)):
                 self.target_name = self.message.target_name
 
+            # Special CALIBRATION
+            if (self.command == protocol.CMD_ASTRO_START_CALIBRATION):
+                self.stopcalibration = False
+
             my_logger.debug(f"Send type >> {WsPacket_message.type}")
             my_logger.debug(f"Send message >> {self.message}")
             my_logger.debug(f"msg data len is >> {len(WsPacket_message.data)}")
@@ -518,7 +524,7 @@ class WebSocketClient:
                     self.ping_task = asyncio.create_task(self.send_ping_periodically())
 
                     # Start the periodic task to abort all task after timeout
-                    self.abort_tasks = asyncio.create_task(self.abort_tasks_timeout(90))
+                    self.abort_tasks = asyncio.create_task(self.abort_tasks_timeout(180))
 
                     await asyncio.sleep(2)
 

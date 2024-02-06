@@ -61,9 +61,6 @@ enum AstroCMD {
     CMD_CAMERA_TELE_GET_SYSTEM_WORKING_STATE = 10039; // Get the working status of the whole machine
     CMD_CAMERA_TELE_SET_JPG_QUALITY = 10040; // Set jpg preview quality
 
-    CMD_CAMERA_WIDE_OPEN_CAMERA = 12000; // Turn on the camera
-    CMD_CAMERA_WIDE_CLOSE_CAMERA = 12001; // Turn off the camera
-
     CMD_ASTRO_START_CALIBRATION = 11000; // Start calibration
     CMD_ASTRO_STOP_CALIBRATION = 11001; // Stop calibration
     CMD_ASTRO_START_GOTO_DSO = 11002; // Start GOTO Deep Space Object
@@ -77,6 +74,36 @@ enum AstroCMD {
     CMD_ASTRO_GO_LIVE = 11010; // GO LIVE interface
     CMD_ASTRO_START_TRACK_SPECIAL_TARGET = 11011; // Start tracking the sun and moon
     CMD_ASTRO_STOP_TRACK_SPECIAL_TARGET = 11012; // Stop tracking the sun and moon
+
+    CMD_CAMERA_WIDE_OPEN_CAMERA = 12000; // Turn on the camera
+    CMD_CAMERA_WIDE_CLOSE_CAMERA = 12001; // Turn off the camera
+    CMD_CAMERA_WIDE_SET_EXP_MODE = 12002; // Set exposure mode
+    CMD_CAMERA_WIDE_GET_EXP_MODE = 12003; // Acquire exposure mode
+    CMD_CAMERA_WIDE_SET_EXP = 12004; // Set exposure value
+    CMD_CAMERA_WIDE_GET_EXP = 12005; // Get exposure value
+    CMD_CAMERA_WIDE_SET_GAIN = 12006; // Set gain
+    CMD_CAMERA_WIDE_GET_GAIN = 12007; // Acquisition gain
+    CMD_CAMERA_WIDE_SET_BRIGHTNESS = 12008; // Set brightness
+    CMD_CAMERA_WIDE_GET_BRIGHTNESS = 12009; // Acquire brightness
+    CMD_CAMERA_WIDE_SET_CONTRAST = 12010; // Set contrast
+    CMD_CAMERA_WIDE_GET_CONTRAST = 12011; // Get contrast
+    CMD_CAMERA_WIDE_SET_SATURATION = 12012; // Set saturation
+    CMD_CAMERA_WIDE_GET_SATURATION = 12013; // Acquire saturation
+    CMD_CAMERA_WIDE_SET_HUE = 12014; // Set tone
+    CMD_CAMERA_WIDE_GET_HUE = 12015; // Get hue
+    CMD_CAMERA_WIDE_SET_SHARPNESS = 12016; // Set sharpness
+    CMD_CAMERA_WIDE_GET_SHARPNESS = 12017; // Acquire sharpness
+    CMD_CAMERA_WIDE_SET_WB_MODE = 12018; // Set white balance mode
+    CMD_CAMERA_WIDE_GET_WB_MODE = 12019; // Acquire white balance mode
+    CMD_CAMERA_WIDE_SET_WB_CT = 12020; // Set white balance color temperature
+    CMD_CAMERA_WIDE_GET_WB_CT = 12021; // Obtain white balance color temperature
+    CMD_CAMERA_WIDE_PHOTOGRAPH = 12022; // Take photos
+    CMD_CAMERA_WIDE_BURST = 12023; // Continuous shooting
+    CMD_CAMERA_WIDE_STOP_BURST = 12024; // Stop continuous shooting
+    CMD_CAMERA_WIDE_START_TIMELAPSE_PHOTO = 12025; // Start time-lapse photography
+    CMD_CAMERA_WIDE_STOP_TIMELAPSE_PHOTO = 12026; // Stop time-lapse photography
+    CMD_CAMERA_WIDE_GET_ALL_PARAMS = 12027; // Get all parameters
+    CMD_CAMERA_WIDE_SET_ALL_PARAMS = 12028; // Set all parameters
 
     CMD_SYSTEM_SET_TIME = 13000; // Set the system time
     CMD_SYSTEM_SET_TIME_ZONE = 13001; // Set the time zone
@@ -113,6 +140,10 @@ enum AstroCMD {
     CMD_NOTIFY_CPU_MODE = 15227; // CPU mode
     CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL = 15228; // Sun and moon tracking status
     CMD_NOTIFY_POWER_OFF = 15229; // Shutdown notification
+
+    CMD_RGB_POWER_POWER_DOWN = 13502; // Shut down
+    CMD_RGB_POWER_REBOOT = 13505; // Restart
+
 }
 
 enum ErrorCodeAstro {
