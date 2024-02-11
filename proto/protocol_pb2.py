@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0eprotocol.proto*\xe4\x01\n\x08ModuleId\x12\x0f\n\x0bMODULE_NONE\x10\x00\x12\x16\n\x12MODULE_CAMERA_TELE\x10\x01\x12\x16\n\x12MODULE_CAMERA_WIDE\x10\x02\x12\x10\n\x0cMODULE_ASTRO\x10\x03\x12\x11\n\rMODULE_SYSTEM\x10\x04\x12\x14\n\x10MODULE_RGB_POWER\x10\x05\x12\x10\n\x0cMODULE_MOTOR\x10\x06\x12\x10\n\x0cMODULE_TRACK\x10\x07\x12\x10\n\x0cMODULE_FOCUS\x10\x08\x12\x11\n\rMODULE_NOTIFY\x10\t\x12\x13\n\x0fMODULE_PANORAMA\x10\n*\xd3 \n\x08\x41stroCMD\x12\n\n\x06NO_CMD\x10\x00\x12 \n\x1b\x43MD_CAMERA_TELE_OPEN_CAMERA\x10\x90N\x12!\n\x1c\x43MD_CAMERA_TELE_CLOSE_CAMERA\x10\x91N\x12\x1f\n\x1a\x43MD_CAMERA_TELE_PHOTOGRAPH\x10\x92N\x12\x1a\n\x15\x43MD_CAMERA_TELE_BURST\x10\x93N\x12\x1f\n\x1a\x43MD_CAMERA_TELE_STOP_BURST\x10\x94N\x12!\n\x1c\x43MD_CAMERA_TELE_START_RECORD\x10\x95N\x12 \n\x1b\x43MD_CAMERA_TELE_STOP_RECORD\x10\x96N\x12!\n\x1c\x43MD_CAMERA_TELE_SET_EXP_MODE\x10\x97N\x12!\n\x1c\x43MD_CAMERA_TELE_GET_EXP_MODE\x10\x98N\x12\x1c\n\x17\x43MD_CAMERA_TELE_SET_EXP\x10\x99N\x12\x1c\n\x17\x43MD_CAMERA_TELE_GET_EXP\x10\x9aN\x12\"\n\x1d\x43MD_CAMERA_TELE_SET_GAIN_MODE\x10\x9bN\x12\"\n\x1d\x43MD_CAMERA_TELE_GET_GAIN_MODE\x10\x9cN\x12\x1d\n\x18\x43MD_CAMERA_TELE_SET_GAIN\x10\x9dN\x12\x1d\n\x18\x43MD_CAMERA_TELE_GET_GAIN\x10\x9eN\x12#\n\x1e\x43MD_CAMERA_TELE_SET_BRIGHTNESS\x10\x9fN\x12#\n\x1e\x43MD_CAMERA_TELE_GET_BRIGHTNESS\x10\xa0N\x12!\n\x1c\x43MD_CAMERA_TELE_SET_CONTRAST\x10\xa1N\x12!\n\x1c\x43MD_CAMERA_TELE_GET_CONTRAST\x10\xa2N\x12#\n\x1e\x43MD_CAMERA_TELE_SET_SATURATION\x10\xa3N\x12#\n\x1e\x43MD_CAMERA_TELE_GET_SATURATION\x10\xa4N\x12\x1c\n\x17\x43MD_CAMERA_TELE_SET_HUE\x10\xa5N\x12\x1c\n\x17\x43MD_CAMERA_TELE_GET_HUE\x10\xa6N\x12\"\n\x1d\x43MD_CAMERA_TELE_SET_SHARPNESS\x10\xa7N\x12\"\n\x1d\x43MD_CAMERA_TELE_GET_SHARPNESS\x10\xa8N\x12 \n\x1b\x43MD_CAMERA_TELE_SET_WB_MODE\x10\xa9N\x12 \n\x1b\x43MD_CAMERA_TELE_GET_WB_MODE\x10\xaaN\x12!\n\x1c\x43MD_CAMERA_TELE_SET_WB_SCENE\x10\xabN\x12!\n\x1c\x43MD_CAMERA_TELE_GET_WB_SCENE\x10\xacN\x12\x1e\n\x19\x43MD_CAMERA_TELE_SET_WB_CT\x10\xadN\x12\x1e\n\x19\x43MD_CAMERA_TELE_GET_WB_CT\x10\xaeN\x12\x1e\n\x19\x43MD_CAMERA_TELE_SET_IRCUT\x10\xafN\x12\x1e\n\x19\x43MD_CAMERA_TELE_GET_IRCUT\x10\xb0N\x12*\n%CMD_CAMERA_TELE_START_TIMELAPSE_PHOTO\x10\xb1N\x12)\n$CMD_CAMERA_TELE_STOP_TIMELAPSE_PHOTO\x10\xb2N\x12#\n\x1e\x43MD_CAMERA_TELE_SET_ALL_PARAMS\x10\xb3N\x12#\n\x1e\x43MD_CAMERA_TELE_GET_ALL_PARAMS\x10\xb4N\x12&\n!CMD_CAMERA_TELE_SET_FEATURE_PARAM\x10\xb5N\x12+\n&CMD_CAMERA_TELE_GET_ALL_FEATURE_PARAMS\x10\xb6N\x12-\n(CMD_CAMERA_TELE_GET_SYSTEM_WORKING_STATE\x10\xb7N\x12$\n\x1f\x43MD_CAMERA_TELE_SET_JPG_QUALITY\x10\xb8N\x12 \n\x1b\x43MD_ASTRO_START_CALIBRATION\x10\xf8U\x12\x1f\n\x1a\x43MD_ASTRO_STOP_CALIBRATION\x10\xf9U\x12\x1d\n\x18\x43MD_ASTRO_START_GOTO_DSO\x10\xfaU\x12&\n!CMD_ASTRO_START_GOTO_SOLAR_SYSTEM\x10\xfbU\x12\x18\n\x13\x43MD_ASTRO_STOP_GOTO\x10\xfcU\x12.\n)CMD_ASTRO_START_CAPTURE_RAW_LIVE_STACKING\x10\xfdU\x12-\n(CMD_ASTRO_STOP_CAPTURE_RAW_LIVE_STACKING\x10\xfeU\x12%\n CMD_ASTRO_START_CAPTURE_RAW_DARK\x10\xffU\x12$\n\x1f\x43MD_ASTRO_STOP_CAPTURE_RAW_DARK\x10\x80V\x12\x1d\n\x18\x43MD_ASTRO_CHECK_GOT_DARK\x10\x81V\x12\x16\n\x11\x43MD_ASTRO_GO_LIVE\x10\x82V\x12)\n$CMD_ASTRO_START_TRACK_SPECIAL_TARGET\x10\x83V\x12(\n#CMD_ASTRO_STOP_TRACK_SPECIAL_TARGET\x10\x84V\x12 \n\x1b\x43MD_CAMERA_WIDE_OPEN_CAMERA\x10\xe0]\x12!\n\x1c\x43MD_CAMERA_WIDE_CLOSE_CAMERA\x10\xe1]\x12!\n\x1c\x43MD_CAMERA_WIDE_SET_EXP_MODE\x10\xe2]\x12!\n\x1c\x43MD_CAMERA_WIDE_GET_EXP_MODE\x10\xe3]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_SET_EXP\x10\xe4]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_GET_EXP\x10\xe5]\x12\x1d\n\x18\x43MD_CAMERA_WIDE_SET_GAIN\x10\xe6]\x12\x1d\n\x18\x43MD_CAMERA_WIDE_GET_GAIN\x10\xe7]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_BRIGHTNESS\x10\xe8]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_BRIGHTNESS\x10\xe9]\x12!\n\x1c\x43MD_CAMERA_WIDE_SET_CONTRAST\x10\xea]\x12!\n\x1c\x43MD_CAMERA_WIDE_GET_CONTRAST\x10\xeb]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_SATURATION\x10\xec]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_SATURATION\x10\xed]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_SET_HUE\x10\xee]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_GET_HUE\x10\xef]\x12\"\n\x1d\x43MD_CAMERA_WIDE_SET_SHARPNESS\x10\xf0]\x12\"\n\x1d\x43MD_CAMERA_WIDE_GET_SHARPNESS\x10\xf1]\x12 \n\x1b\x43MD_CAMERA_WIDE_SET_WB_MODE\x10\xf2]\x12 \n\x1b\x43MD_CAMERA_WIDE_GET_WB_MODE\x10\xf3]\x12\x1e\n\x19\x43MD_CAMERA_WIDE_SET_WB_CT\x10\xf4]\x12\x1e\n\x19\x43MD_CAMERA_WIDE_GET_WB_CT\x10\xf5]\x12\x1f\n\x1a\x43MD_CAMERA_WIDE_PHOTOGRAPH\x10\xf6]\x12\x1a\n\x15\x43MD_CAMERA_WIDE_BURST\x10\xf7]\x12\x1f\n\x1a\x43MD_CAMERA_WIDE_STOP_BURST\x10\xf8]\x12*\n%CMD_CAMERA_WIDE_START_TIMELAPSE_PHOTO\x10\xf9]\x12)\n$CMD_CAMERA_WIDE_STOP_TIMELAPSE_PHOTO\x10\xfa]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_ALL_PARAMS\x10\xfb]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_ALL_PARAMS\x10\xfc]\x12\x18\n\x13\x43MD_SYSTEM_SET_TIME\x10\xc8\x65\x12\x1d\n\x18\x43MD_SYSTEM_SET_TIME_ZONE\x10\xc9\x65\x12\x1c\n\x17\x43MD_SYSTEM_SET_MTP_MODE\x10\xca\x65\x12\x1c\n\x17\x43MD_SYSTEM_SET_CPU_MODE\x10\xcb\x65\x12*\n%CMD_NOTIFY_TELE_WIDI_PICTURE_MATCHING\x10\xe0v\x12\x13\n\x0e\x43MD_NOTIFY_ELE\x10\xe1v\x12\x16\n\x11\x43MD_NOTIFY_CHARGE\x10\xe2v\x12\x1b\n\x16\x43MD_NOTIFY_SDCARD_INFO\x10\xe3v\x12 \n\x1b\x43MD_NOTIFY_TELE_RECORD_TIME\x10\xe4v\x12\'\n\"CMD_NOTIFY_TELE_TIMELAPSE_OUT_TIME\x10\xe5v\x12&\n!CMD_NOTIFY_STATE_CAPTURE_RAW_DARK\x10\xe6v\x12)\n$CMD_NOTIFY_PROGRASS_CAPTURE_RAW_DARK\x10\xe7v\x12/\n*CMD_NOTIFY_STATE_CAPTURE_RAW_LIVE_STACKING\x10\xe8v\x12\x32\n-CMD_NOTIFY_PROGRASS_CAPTURE_RAW_LIVE_STACKING\x10\xe9v\x12\'\n\"CMD_NOTIFY_STATE_ASTRO_CALIBRATION\x10\xeav\x12 \n\x1b\x43MD_NOTIFY_STATE_ASTRO_GOTO\x10\xebv\x12$\n\x1f\x43MD_NOTIFY_STATE_ASTRO_TRACKING\x10\xecv\x12\x1e\n\x19\x43MD_NOTIFY_TELE_SET_PARAM\x10\xedv\x12\x1e\n\x19\x43MD_NOTIFY_WIDE_SET_PARAM\x10\xeev\x12#\n\x1e\x43MD_NOTIFY_TELE_FUNCTION_STATE\x10\xefv\x12#\n\x1e\x43MD_NOTIFY_WIDE_FUNCTION_STATE\x10\xf0v\x12!\n\x1c\x43MD_NOTIFY_SET_FEATURE_PARAM\x10\xf1v\x12#\n\x1e\x43MD_NOTIFY_TELE_BURST_PROGRESS\x10\xf2v\x12!\n\x1c\x43MD_NOTIFY_PANORAMA_PROGRESS\x10\xf3v\x12#\n\x1e\x43MD_NOTIFY_WIDE_BURST_PROGRESS\x10\xf4v\x12\x19\n\x14\x43MD_NOTIFY_RGB_STATE\x10\xf5v\x12\x1f\n\x1a\x43MD_NOTIFY_POWER_IND_STATE\x10\xf6v\x12\"\n\x1d\x43MD_NOTIFY_WS_HOST_SLAVE_MODE\x10\xf7v\x12\x19\n\x14\x43MD_NOTIFY_MTP_STATE\x10\xf8v\x12\x1c\n\x17\x43MD_NOTIFY_TRACK_RESULT\x10\xf9v\x12\'\n\"CMD_NOTIFY_WIDE_TIMELAPSE_OUT_TIME\x10\xfav\x12\x18\n\x13\x43MD_NOTIFY_CPU_MODE\x10\xfbv\x12,\n\'CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL\x10\xfcv\x12\x19\n\x14\x43MD_NOTIFY_POWER_OFF\x10\xfdv\x12\x1d\n\x18\x43MD_RGB_POWER_POWER_DOWN\x10\xbei\x12\x19\n\x14\x43MD_RGB_POWER_REBOOT\x10\xc1i*\xa5\x0b\n\x0e\x45rrorCodeAstro\x12\x0c\n\x08NO_ERROR\x10\x00\x12$\n\x17WS_PARSE_PROTOBUF_ERROR\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13WS_SDCARD_NOT_EXIST\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1d\n\x10WS_INVALID_PARAM\x10\xfd\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15WS_SDCARD_WRITE_ERROR\x10\xfc\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_TELE_OPENED\x10\xfc\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_TELE_CLOSED\x10\xfb\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_CAMERA_TELE_ISP_SET_FAILED\x10\xfa\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12)\n\x1c\x43ODE_CAMERA_TELE_OPEN_FAILED\x10\xf8\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_CAMERA_TELE_WORKING_BUSY_STACK\x10\xf5\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_CAMERA_TELE_CAPTURE_RAW_FAILED\x10\xf2\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_TELE_WORKING_BUSY\x10\xf1\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_ASTRO_PLATE_SOLVING_FAILED\x10\x94\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12%\n\x18\x43ODE_ASTRO_FUNCTION_BUSY\x10\x93\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12.\n!CODE_ASTRO_DARK_GAIN_OUT_OF_RANGE\x10\x92\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12&\n\x19\x43ODE_ASTRO_DARK_NOT_FOUND\x10\x91\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_ASTRO_CALIBRATION_FAILED\x10\x90\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12#\n\x16\x43ODE_ASTRO_GOTO_FAILED\x10\x8f\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12!\n\x14\x43ODE_ASTRO_NEED_GOTO\x10\x87\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12/\n\"CODE_ASTRO_NEED_ADJUST_SHOOT_PARAM\x10\x86\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_WIDE_OPENED\x10\xac\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_WIDE_CLOSED\x10\xab\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_WIDE_CANNOT_FOUND\x10\xaa\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12)\n\x1c\x43ODE_CAMERA_WIDE_OPEN_FAILED\x10\xa9\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_WIDE_CLOSE_FAILED\x10\xa8\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_CAMERA_WIDE_SET_ISP_FAILED\x10\xa7\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12+\n\x1e\x43ODE_CAMERA_WIDE_PHOTOGRAPHING\x10\xa6\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12(\n\x1b\x43ODE_SYSTEM_SET_TIME_FAILED\x10\x8c\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_SYSTEM_SET_TIMEZONE_FAILED\x10\x8b\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_SYSTEM_SETTING_TIMEZONE_FAILED\x10\x8a\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12\x33\n&CODE_STEP_MOTOR_LIMIT_POSITION_WARNING\x10\xca\x8e\xff\xff\xff\xff\xff\xff\xff\x01\x12\x32\n%CODE_STEP_MOTOR_LIMIT_POSITION_HITTED\x10\xc9\x8e\xff\xff\xff\xff\xff\xff\xff\x01\x12\'\n\x1a\x43ODE_PANORAMA_PHOTO_FAILED\x10\x90\x86\xff\xff\xff\xff\xff\xff\xff\x01\x12-\n CODE_PANORAMA_MOTOR_RESET_FAILED\x10\x8f\x86\xff\xff\xff\xff\xff\xff\xff\x01*;\n\x14\x41stroTrackingSpecial\x12\x10\n\x0cTRACKING_SUN\x10\x00\x12\x11\n\rTRACKING_MOON\x10\x01\x62\x06proto3'
+  serialized_pb=b'\n\x0eprotocol.proto*\xe4\x01\n\x08ModuleId\x12\x0f\n\x0bMODULE_NONE\x10\x00\x12\x16\n\x12MODULE_CAMERA_TELE\x10\x01\x12\x16\n\x12MODULE_CAMERA_WIDE\x10\x02\x12\x10\n\x0cMODULE_ASTRO\x10\x03\x12\x11\n\rMODULE_SYSTEM\x10\x04\x12\x14\n\x10MODULE_RGB_POWER\x10\x05\x12\x10\n\x0cMODULE_MOTOR\x10\x06\x12\x10\n\x0cMODULE_TRACK\x10\x07\x12\x10\n\x0cMODULE_FOCUS\x10\x08\x12\x11\n\rMODULE_NOTIFY\x10\t\x12\x13\n\x0fMODULE_PANORAMA\x10\n*s\n\rMessageTypeId\x12\x10\n\x0cTYPE_REQUEST\x10\x00\x12\x19\n\x15TYPE_REQUEST_RESPONSE\x10\x01\x12\x15\n\x11TYPE_NOTIFICATION\x10\x02\x12\x1e\n\x1aTYPE_NOTIFICATION_RESPONSE\x10\x03*\xb5#\n\x08\x44warfCMD\x12\n\n\x06NO_CMD\x10\x00\x12 \n\x1b\x43MD_CAMERA_TELE_OPEN_CAMERA\x10\x90N\x12!\n\x1c\x43MD_CAMERA_TELE_CLOSE_CAMERA\x10\x91N\x12\x1f\n\x1a\x43MD_CAMERA_TELE_PHOTOGRAPH\x10\x92N\x12\x1a\n\x15\x43MD_CAMERA_TELE_BURST\x10\x93N\x12\x1f\n\x1a\x43MD_CAMERA_TELE_STOP_BURST\x10\x94N\x12!\n\x1c\x43MD_CAMERA_TELE_START_RECORD\x10\x95N\x12 \n\x1b\x43MD_CAMERA_TELE_STOP_RECORD\x10\x96N\x12!\n\x1c\x43MD_CAMERA_TELE_SET_EXP_MODE\x10\x97N\x12!\n\x1c\x43MD_CAMERA_TELE_GET_EXP_MODE\x10\x98N\x12\x1c\n\x17\x43MD_CAMERA_TELE_SET_EXP\x10\x99N\x12\x1c\n\x17\x43MD_CAMERA_TELE_GET_EXP\x10\x9aN\x12\"\n\x1d\x43MD_CAMERA_TELE_SET_GAIN_MODE\x10\x9bN\x12\"\n\x1d\x43MD_CAMERA_TELE_GET_GAIN_MODE\x10\x9cN\x12\x1d\n\x18\x43MD_CAMERA_TELE_SET_GAIN\x10\x9dN\x12\x1d\n\x18\x43MD_CAMERA_TELE_GET_GAIN\x10\x9eN\x12#\n\x1e\x43MD_CAMERA_TELE_SET_BRIGHTNESS\x10\x9fN\x12#\n\x1e\x43MD_CAMERA_TELE_GET_BRIGHTNESS\x10\xa0N\x12!\n\x1c\x43MD_CAMERA_TELE_SET_CONTRAST\x10\xa1N\x12!\n\x1c\x43MD_CAMERA_TELE_GET_CONTRAST\x10\xa2N\x12#\n\x1e\x43MD_CAMERA_TELE_SET_SATURATION\x10\xa3N\x12#\n\x1e\x43MD_CAMERA_TELE_GET_SATURATION\x10\xa4N\x12\x1c\n\x17\x43MD_CAMERA_TELE_SET_HUE\x10\xa5N\x12\x1c\n\x17\x43MD_CAMERA_TELE_GET_HUE\x10\xa6N\x12\"\n\x1d\x43MD_CAMERA_TELE_SET_SHARPNESS\x10\xa7N\x12\"\n\x1d\x43MD_CAMERA_TELE_GET_SHARPNESS\x10\xa8N\x12 \n\x1b\x43MD_CAMERA_TELE_SET_WB_MODE\x10\xa9N\x12 \n\x1b\x43MD_CAMERA_TELE_GET_WB_MODE\x10\xaaN\x12!\n\x1c\x43MD_CAMERA_TELE_SET_WB_SCENE\x10\xabN\x12!\n\x1c\x43MD_CAMERA_TELE_GET_WB_SCENE\x10\xacN\x12\x1e\n\x19\x43MD_CAMERA_TELE_SET_WB_CT\x10\xadN\x12\x1e\n\x19\x43MD_CAMERA_TELE_GET_WB_CT\x10\xaeN\x12\x1e\n\x19\x43MD_CAMERA_TELE_SET_IRCUT\x10\xafN\x12\x1e\n\x19\x43MD_CAMERA_TELE_GET_IRCUT\x10\xb0N\x12*\n%CMD_CAMERA_TELE_START_TIMELAPSE_PHOTO\x10\xb1N\x12)\n$CMD_CAMERA_TELE_STOP_TIMELAPSE_PHOTO\x10\xb2N\x12#\n\x1e\x43MD_CAMERA_TELE_SET_ALL_PARAMS\x10\xb3N\x12#\n\x1e\x43MD_CAMERA_TELE_GET_ALL_PARAMS\x10\xb4N\x12&\n!CMD_CAMERA_TELE_SET_FEATURE_PARAM\x10\xb5N\x12+\n&CMD_CAMERA_TELE_GET_ALL_FEATURE_PARAMS\x10\xb6N\x12-\n(CMD_CAMERA_TELE_GET_SYSTEM_WORKING_STATE\x10\xb7N\x12$\n\x1f\x43MD_CAMERA_TELE_SET_JPG_QUALITY\x10\xb8N\x12 \n\x1b\x43MD_ASTRO_START_CALIBRATION\x10\xf8U\x12\x1f\n\x1a\x43MD_ASTRO_STOP_CALIBRATION\x10\xf9U\x12\x1d\n\x18\x43MD_ASTRO_START_GOTO_DSO\x10\xfaU\x12&\n!CMD_ASTRO_START_GOTO_SOLAR_SYSTEM\x10\xfbU\x12\x18\n\x13\x43MD_ASTRO_STOP_GOTO\x10\xfcU\x12.\n)CMD_ASTRO_START_CAPTURE_RAW_LIVE_STACKING\x10\xfdU\x12-\n(CMD_ASTRO_STOP_CAPTURE_RAW_LIVE_STACKING\x10\xfeU\x12%\n CMD_ASTRO_START_CAPTURE_RAW_DARK\x10\xffU\x12$\n\x1f\x43MD_ASTRO_STOP_CAPTURE_RAW_DARK\x10\x80V\x12\x1d\n\x18\x43MD_ASTRO_CHECK_GOT_DARK\x10\x81V\x12\x16\n\x11\x43MD_ASTRO_GO_LIVE\x10\x82V\x12)\n$CMD_ASTRO_START_TRACK_SPECIAL_TARGET\x10\x83V\x12(\n#CMD_ASTRO_STOP_TRACK_SPECIAL_TARGET\x10\x84V\x12 \n\x1b\x43MD_CAMERA_WIDE_OPEN_CAMERA\x10\xe0]\x12!\n\x1c\x43MD_CAMERA_WIDE_CLOSE_CAMERA\x10\xe1]\x12!\n\x1c\x43MD_CAMERA_WIDE_SET_EXP_MODE\x10\xe2]\x12!\n\x1c\x43MD_CAMERA_WIDE_GET_EXP_MODE\x10\xe3]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_SET_EXP\x10\xe4]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_GET_EXP\x10\xe5]\x12\x1d\n\x18\x43MD_CAMERA_WIDE_SET_GAIN\x10\xe6]\x12\x1d\n\x18\x43MD_CAMERA_WIDE_GET_GAIN\x10\xe7]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_BRIGHTNESS\x10\xe8]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_BRIGHTNESS\x10\xe9]\x12!\n\x1c\x43MD_CAMERA_WIDE_SET_CONTRAST\x10\xea]\x12!\n\x1c\x43MD_CAMERA_WIDE_GET_CONTRAST\x10\xeb]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_SATURATION\x10\xec]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_SATURATION\x10\xed]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_SET_HUE\x10\xee]\x12\x1c\n\x17\x43MD_CAMERA_WIDE_GET_HUE\x10\xef]\x12\"\n\x1d\x43MD_CAMERA_WIDE_SET_SHARPNESS\x10\xf0]\x12\"\n\x1d\x43MD_CAMERA_WIDE_GET_SHARPNESS\x10\xf1]\x12 \n\x1b\x43MD_CAMERA_WIDE_SET_WB_MODE\x10\xf2]\x12 \n\x1b\x43MD_CAMERA_WIDE_GET_WB_MODE\x10\xf3]\x12\x1e\n\x19\x43MD_CAMERA_WIDE_SET_WB_CT\x10\xf4]\x12\x1e\n\x19\x43MD_CAMERA_WIDE_GET_WB_CT\x10\xf5]\x12\x1f\n\x1a\x43MD_CAMERA_WIDE_PHOTOGRAPH\x10\xf6]\x12\x1a\n\x15\x43MD_CAMERA_WIDE_BURST\x10\xf7]\x12\x1f\n\x1a\x43MD_CAMERA_WIDE_STOP_BURST\x10\xf8]\x12*\n%CMD_CAMERA_WIDE_START_TIMELAPSE_PHOTO\x10\xf9]\x12)\n$CMD_CAMERA_WIDE_STOP_TIMELAPSE_PHOTO\x10\xfa]\x12#\n\x1e\x43MD_CAMERA_WIDE_GET_ALL_PARAMS\x10\xfb]\x12#\n\x1e\x43MD_CAMERA_WIDE_SET_ALL_PARAMS\x10\xfc]\x12\x18\n\x13\x43MD_SYSTEM_SET_TIME\x10\xc8\x65\x12\x1d\n\x18\x43MD_SYSTEM_SET_TIME_ZONE\x10\xc9\x65\x12\x1c\n\x17\x43MD_SYSTEM_SET_MTP_MODE\x10\xca\x65\x12\x1c\n\x17\x43MD_SYSTEM_SET_CPU_MODE\x10\xcb\x65\x12\x1b\n\x16\x43MD_RGB_POWER_OPEN_RGB\x10\xbci\x12\x1c\n\x17\x43MD_RGB_POWER_CLOSE_RGB\x10\xbdi\x12\x1d\n\x18\x43MD_RGB_POWER_POWER_DOWN\x10\xbei\x12\x1e\n\x19\x43MD_RGB_POWER_POWERIND_ON\x10\xbfi\x12\x1f\n\x1a\x43MD_RGB_POWER_POWERIND_OFF\x10\xc0i\x12\x19\n\x14\x43MD_RGB_POWER_REBOOT\x10\xc1i\x12\x19\n\x14\x43MD_FOCUS_AUTO_FOCUS\x10\x98u\x12\'\n\"CMD_FOCUS_MANUAL_SINGLE_STEP_FOCUS\x10\x99u\x12)\n$CMD_FOCUS_START_MANUAL_CONTINU_FOCUS\x10\x9au\x12(\n#CMD_FOCUS_STOP_MANUAL_CONTINU_FOCUS\x10\x9bu\x12%\n CMD_FOCUS_START_ASTRO_AUTO_FOCUS\x10\x9cu\x12$\n\x1f\x43MD_FOCUS_STOP_ASTRO_AUTO_FOCUS\x10\x9du\x12*\n%CMD_NOTIFY_TELE_WIDI_PICTURE_MATCHING\x10\xe0v\x12\x13\n\x0e\x43MD_NOTIFY_ELE\x10\xe1v\x12\x16\n\x11\x43MD_NOTIFY_CHARGE\x10\xe2v\x12\x1b\n\x16\x43MD_NOTIFY_SDCARD_INFO\x10\xe3v\x12 \n\x1b\x43MD_NOTIFY_TELE_RECORD_TIME\x10\xe4v\x12\'\n\"CMD_NOTIFY_TELE_TIMELAPSE_OUT_TIME\x10\xe5v\x12&\n!CMD_NOTIFY_STATE_CAPTURE_RAW_DARK\x10\xe6v\x12)\n$CMD_NOTIFY_PROGRASS_CAPTURE_RAW_DARK\x10\xe7v\x12/\n*CMD_NOTIFY_STATE_CAPTURE_RAW_LIVE_STACKING\x10\xe8v\x12\x32\n-CMD_NOTIFY_PROGRASS_CAPTURE_RAW_LIVE_STACKING\x10\xe9v\x12\'\n\"CMD_NOTIFY_STATE_ASTRO_CALIBRATION\x10\xeav\x12 \n\x1b\x43MD_NOTIFY_STATE_ASTRO_GOTO\x10\xebv\x12$\n\x1f\x43MD_NOTIFY_STATE_ASTRO_TRACKING\x10\xecv\x12\x1e\n\x19\x43MD_NOTIFY_TELE_SET_PARAM\x10\xedv\x12\x1e\n\x19\x43MD_NOTIFY_WIDE_SET_PARAM\x10\xeev\x12#\n\x1e\x43MD_NOTIFY_TELE_FUNCTION_STATE\x10\xefv\x12#\n\x1e\x43MD_NOTIFY_WIDE_FUNCTION_STATE\x10\xf0v\x12!\n\x1c\x43MD_NOTIFY_SET_FEATURE_PARAM\x10\xf1v\x12#\n\x1e\x43MD_NOTIFY_TELE_BURST_PROGRESS\x10\xf2v\x12!\n\x1c\x43MD_NOTIFY_PANORAMA_PROGRESS\x10\xf3v\x12#\n\x1e\x43MD_NOTIFY_WIDE_BURST_PROGRESS\x10\xf4v\x12\x19\n\x14\x43MD_NOTIFY_RGB_STATE\x10\xf5v\x12\x1f\n\x1a\x43MD_NOTIFY_POWER_IND_STATE\x10\xf6v\x12\"\n\x1d\x43MD_NOTIFY_WS_HOST_SLAVE_MODE\x10\xf7v\x12\x19\n\x14\x43MD_NOTIFY_MTP_STATE\x10\xf8v\x12\x1c\n\x17\x43MD_NOTIFY_TRACK_RESULT\x10\xf9v\x12\'\n\"CMD_NOTIFY_WIDE_TIMELAPSE_OUT_TIME\x10\xfav\x12\x18\n\x13\x43MD_NOTIFY_CPU_MODE\x10\xfbv\x12,\n\'CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL\x10\xfcv\x12\x19\n\x14\x43MD_NOTIFY_POWER_OFF\x10\xfdv*\x9f\x0b\n\x0e\x44warfErrorCode\x12\x06\n\x02OK\x10\x00\x12$\n\x17WS_PARSE_PROTOBUF_ERROR\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12 \n\x13WS_SDCARD_NOT_EXIST\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x1d\n\x10WS_INVALID_PARAM\x10\xfd\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\"\n\x15WS_SDCARD_WRITE_ERROR\x10\xfc\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_TELE_OPENED\x10\xfc\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_TELE_CLOSED\x10\xfb\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_CAMERA_TELE_ISP_SET_FAILED\x10\xfa\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12)\n\x1c\x43ODE_CAMERA_TELE_OPEN_FAILED\x10\xf8\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_CAMERA_TELE_WORKING_BUSY_STACK\x10\xf5\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_CAMERA_TELE_CAPTURE_RAW_FAILED\x10\xf2\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_TELE_WORKING_BUSY\x10\xf1\xad\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_ASTRO_PLATE_SOLVING_FAILED\x10\x94\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12%\n\x18\x43ODE_ASTRO_FUNCTION_BUSY\x10\x93\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12.\n!CODE_ASTRO_DARK_GAIN_OUT_OF_RANGE\x10\x92\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12&\n\x19\x43ODE_ASTRO_DARK_NOT_FOUND\x10\x91\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_ASTRO_CALIBRATION_FAILED\x10\x90\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12#\n\x16\x43ODE_ASTRO_GOTO_FAILED\x10\x8f\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12!\n\x14\x43ODE_ASTRO_NEED_GOTO\x10\x87\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12/\n\"CODE_ASTRO_NEED_ADJUST_SHOOT_PARAM\x10\x86\xa6\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_WIDE_OPENED\x10\xac\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12$\n\x17\x43ODE_CAMERA_WIDE_CLOSED\x10\xab\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_WIDE_CANNOT_FOUND\x10\xaa\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12)\n\x1c\x43ODE_CAMERA_WIDE_OPEN_FAILED\x10\xa9\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12*\n\x1d\x43ODE_CAMERA_WIDE_CLOSE_FAILED\x10\xa8\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_CAMERA_WIDE_SET_ISP_FAILED\x10\xa7\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12+\n\x1e\x43ODE_CAMERA_WIDE_PHOTOGRAPHING\x10\xa6\x9e\xff\xff\xff\xff\xff\xff\xff\x01\x12(\n\x1b\x43ODE_SYSTEM_SET_TIME_FAILED\x10\x8c\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12,\n\x1f\x43ODE_SYSTEM_SET_TIMEZONE_FAILED\x10\x8b\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12\x30\n#CODE_SYSTEM_SETTING_TIMEZONE_FAILED\x10\x8a\x98\xff\xff\xff\xff\xff\xff\xff\x01\x12\x33\n&CODE_STEP_MOTOR_LIMIT_POSITION_WARNING\x10\xca\x8e\xff\xff\xff\xff\xff\xff\xff\x01\x12\x32\n%CODE_STEP_MOTOR_LIMIT_POSITION_HITTED\x10\xc9\x8e\xff\xff\xff\xff\xff\xff\xff\x01\x12\'\n\x1a\x43ODE_PANORAMA_PHOTO_FAILED\x10\x90\x86\xff\xff\xff\xff\xff\xff\xff\x01\x12-\n CODE_PANORAMA_MOTOR_RESET_FAILED\x10\x8f\x86\xff\xff\xff\xff\xff\xff\xff\x01*;\n\x14\x41stroTrackingSpecial\x12\x10\n\x0cTRACKING_SUN\x10\x00\x12\x11\n\rTRACKING_MOON\x10\x01*\x87\x01\n\x11SolarSystemTarget\x12\x0b\n\x07Unknown\x10\x00\x12\x0b\n\x07Mercury\x10\x01\x12\t\n\x05Venus\x10\x02\x12\x08\n\x04Mars\x10\x03\x12\x0b\n\x07Jupiter\x10\x04\x12\n\n\x06Saturn\x10\x05\x12\n\n\x06Uranus\x10\x06\x12\x0b\n\x07Neptune\x10\x07\x12\x08\n\x04Moon\x10\x08\x12\x07\n\x03Sun\x10\t*!\n\tPhotoMode\x12\x08\n\x04\x41uto\x10\x00\x12\n\n\x06Manual\x10\x01*-\n\x06WBMode\x12\x14\n\x10\x43olorTemperature\x10\x00\x12\r\n\tSceneMode\x10\x01*\x1a\n\x05IrCut\x12\x07\n\x03\x43UT\x10\x00\x12\x08\n\x04PASS\x10\x01\x62\x06proto3'
 )
 
 _MODULEID = _descriptor.EnumDescriptor(
@@ -94,9 +94,45 @@ _MODULEID = _descriptor.EnumDescriptor(
 _sym_db.RegisterEnumDescriptor(_MODULEID)
 
 ModuleId = enum_type_wrapper.EnumTypeWrapper(_MODULEID)
-_ASTROCMD = _descriptor.EnumDescriptor(
-  name='AstroCMD',
-  full_name='AstroCMD',
+_MESSAGETYPEID = _descriptor.EnumDescriptor(
+  name='MessageTypeId',
+  full_name='MessageTypeId',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='TYPE_REQUEST', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='TYPE_REQUEST_RESPONSE', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='TYPE_NOTIFICATION', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='TYPE_NOTIFICATION_RESPONSE', index=3, number=3,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=249,
+  serialized_end=364,
+)
+_sym_db.RegisterEnumDescriptor(_MESSAGETYPEID)
+
+MessageTypeId = enum_type_wrapper.EnumTypeWrapper(_MESSAGETYPEID)
+_DWARFCMD = _descriptor.EnumDescriptor(
+  name='DwarfCMD',
+  full_name='DwarfCMD',
   filename=None,
   file=DESCRIPTOR,
   create_key=_descriptor._internal_create_key,
@@ -542,183 +578,233 @@ _ASTROCMD = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_WIDI_PICTURE_MATCHING', index=88, number=15200,
+      name='CMD_RGB_POWER_OPEN_RGB', index=88, number=13500,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_ELE', index=89, number=15201,
+      name='CMD_RGB_POWER_CLOSE_RGB', index=89, number=13501,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_CHARGE', index=90, number=15202,
+      name='CMD_RGB_POWER_POWER_DOWN', index=90, number=13502,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_SDCARD_INFO', index=91, number=15203,
+      name='CMD_RGB_POWER_POWERIND_ON', index=91, number=13503,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_RECORD_TIME', index=92, number=15204,
+      name='CMD_RGB_POWER_POWERIND_OFF', index=92, number=13504,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_TIMELAPSE_OUT_TIME', index=93, number=15205,
+      name='CMD_RGB_POWER_REBOOT', index=93, number=13505,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_CAPTURE_RAW_DARK', index=94, number=15206,
+      name='CMD_FOCUS_AUTO_FOCUS', index=94, number=15000,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_PROGRASS_CAPTURE_RAW_DARK', index=95, number=15207,
+      name='CMD_FOCUS_MANUAL_SINGLE_STEP_FOCUS', index=95, number=15001,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_CAPTURE_RAW_LIVE_STACKING', index=96, number=15208,
+      name='CMD_FOCUS_START_MANUAL_CONTINU_FOCUS', index=96, number=15002,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_PROGRASS_CAPTURE_RAW_LIVE_STACKING', index=97, number=15209,
+      name='CMD_FOCUS_STOP_MANUAL_CONTINU_FOCUS', index=97, number=15003,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_ASTRO_CALIBRATION', index=98, number=15210,
+      name='CMD_FOCUS_START_ASTRO_AUTO_FOCUS', index=98, number=15004,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_ASTRO_GOTO', index=99, number=15211,
+      name='CMD_FOCUS_STOP_ASTRO_AUTO_FOCUS', index=99, number=15005,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_ASTRO_TRACKING', index=100, number=15212,
+      name='CMD_NOTIFY_TELE_WIDI_PICTURE_MATCHING', index=100, number=15200,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_SET_PARAM', index=101, number=15213,
+      name='CMD_NOTIFY_ELE', index=101, number=15201,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_WIDE_SET_PARAM', index=102, number=15214,
+      name='CMD_NOTIFY_CHARGE', index=102, number=15202,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_FUNCTION_STATE', index=103, number=15215,
+      name='CMD_NOTIFY_SDCARD_INFO', index=103, number=15203,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_WIDE_FUNCTION_STATE', index=104, number=15216,
+      name='CMD_NOTIFY_TELE_RECORD_TIME', index=104, number=15204,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_SET_FEATURE_PARAM', index=105, number=15217,
+      name='CMD_NOTIFY_TELE_TIMELAPSE_OUT_TIME', index=105, number=15205,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TELE_BURST_PROGRESS', index=106, number=15218,
+      name='CMD_NOTIFY_STATE_CAPTURE_RAW_DARK', index=106, number=15206,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_PANORAMA_PROGRESS', index=107, number=15219,
+      name='CMD_NOTIFY_PROGRASS_CAPTURE_RAW_DARK', index=107, number=15207,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_WIDE_BURST_PROGRESS', index=108, number=15220,
+      name='CMD_NOTIFY_STATE_CAPTURE_RAW_LIVE_STACKING', index=108, number=15208,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_RGB_STATE', index=109, number=15221,
+      name='CMD_NOTIFY_PROGRASS_CAPTURE_RAW_LIVE_STACKING', index=109, number=15209,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_POWER_IND_STATE', index=110, number=15222,
+      name='CMD_NOTIFY_STATE_ASTRO_CALIBRATION', index=110, number=15210,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_WS_HOST_SLAVE_MODE', index=111, number=15223,
+      name='CMD_NOTIFY_STATE_ASTRO_GOTO', index=111, number=15211,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_MTP_STATE', index=112, number=15224,
+      name='CMD_NOTIFY_STATE_ASTRO_TRACKING', index=112, number=15212,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_TRACK_RESULT', index=113, number=15225,
+      name='CMD_NOTIFY_TELE_SET_PARAM', index=113, number=15213,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_WIDE_TIMELAPSE_OUT_TIME', index=114, number=15226,
+      name='CMD_NOTIFY_WIDE_SET_PARAM', index=114, number=15214,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_CPU_MODE', index=115, number=15227,
+      name='CMD_NOTIFY_TELE_FUNCTION_STATE', index=115, number=15215,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL', index=116, number=15228,
+      name='CMD_NOTIFY_WIDE_FUNCTION_STATE', index=116, number=15216,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_NOTIFY_POWER_OFF', index=117, number=15229,
+      name='CMD_NOTIFY_SET_FEATURE_PARAM', index=117, number=15217,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_RGB_POWER_POWER_DOWN', index=118, number=13502,
+      name='CMD_NOTIFY_TELE_BURST_PROGRESS', index=118, number=15218,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CMD_RGB_POWER_REBOOT', index=119, number=13505,
+      name='CMD_NOTIFY_PANORAMA_PROGRESS', index=119, number=15219,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_WIDE_BURST_PROGRESS', index=120, number=15220,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_RGB_STATE', index=121, number=15221,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_POWER_IND_STATE', index=122, number=15222,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_WS_HOST_SLAVE_MODE', index=123, number=15223,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_MTP_STATE', index=124, number=15224,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_TRACK_RESULT', index=125, number=15225,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_WIDE_TIMELAPSE_OUT_TIME', index=126, number=15226,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_CPU_MODE', index=127, number=15227,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL', index=128, number=15228,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CMD_NOTIFY_POWER_OFF', index=129, number=15229,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=250,
-  serialized_end=4429,
+  serialized_start=367,
+  serialized_end=4900,
 )
-_sym_db.RegisterEnumDescriptor(_ASTROCMD)
+_sym_db.RegisterEnumDescriptor(_DWARFCMD)
 
-AstroCMD = enum_type_wrapper.EnumTypeWrapper(_ASTROCMD)
-_ERRORCODEASTRO = _descriptor.EnumDescriptor(
-  name='ErrorCodeAstro',
-  full_name='ErrorCodeAstro',
+DwarfCMD = enum_type_wrapper.EnumTypeWrapper(_DWARFCMD)
+_DWARFERRORCODE = _descriptor.EnumDescriptor(
+  name='DwarfErrorCode',
+  full_name='DwarfErrorCode',
   filename=None,
   file=DESCRIPTOR,
   create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='NO_ERROR', index=0, number=0,
+      name='OK', index=0, number=0,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -890,12 +976,12 @@ _ERRORCODEASTRO = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4432,
-  serialized_end=5877,
+  serialized_start=4903,
+  serialized_end=6342,
 )
-_sym_db.RegisterEnumDescriptor(_ERRORCODEASTRO)
+_sym_db.RegisterEnumDescriptor(_DWARFERRORCODE)
 
-ErrorCodeAstro = enum_type_wrapper.EnumTypeWrapper(_ERRORCODEASTRO)
+DwarfErrorCode = enum_type_wrapper.EnumTypeWrapper(_DWARFERRORCODE)
 _ASTROTRACKINGSPECIAL = _descriptor.EnumDescriptor(
   name='AstroTrackingSpecial',
   full_name='AstroTrackingSpecial',
@@ -916,12 +1002,156 @@ _ASTROTRACKINGSPECIAL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5879,
-  serialized_end=5938,
+  serialized_start=6344,
+  serialized_end=6403,
 )
 _sym_db.RegisterEnumDescriptor(_ASTROTRACKINGSPECIAL)
 
 AstroTrackingSpecial = enum_type_wrapper.EnumTypeWrapper(_ASTROTRACKINGSPECIAL)
+_SOLARSYSTEMTARGET = _descriptor.EnumDescriptor(
+  name='SolarSystemTarget',
+  full_name='SolarSystemTarget',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unknown', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Mercury', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Venus', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Mars', index=3, number=3,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Jupiter', index=4, number=4,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Saturn', index=5, number=5,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Uranus', index=6, number=6,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Neptune', index=7, number=7,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Moon', index=8, number=8,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Sun', index=9, number=9,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=6406,
+  serialized_end=6541,
+)
+_sym_db.RegisterEnumDescriptor(_SOLARSYSTEMTARGET)
+
+SolarSystemTarget = enum_type_wrapper.EnumTypeWrapper(_SOLARSYSTEMTARGET)
+_PHOTOMODE = _descriptor.EnumDescriptor(
+  name='PhotoMode',
+  full_name='PhotoMode',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Auto', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='Manual', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=6543,
+  serialized_end=6576,
+)
+_sym_db.RegisterEnumDescriptor(_PHOTOMODE)
+
+PhotoMode = enum_type_wrapper.EnumTypeWrapper(_PHOTOMODE)
+_WBMODE = _descriptor.EnumDescriptor(
+  name='WBMode',
+  full_name='WBMode',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='ColorTemperature', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='SceneMode', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=6578,
+  serialized_end=6623,
+)
+_sym_db.RegisterEnumDescriptor(_WBMODE)
+
+WBMode = enum_type_wrapper.EnumTypeWrapper(_WBMODE)
+_IRCUT = _descriptor.EnumDescriptor(
+  name='IrCut',
+  full_name='IrCut',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='CUT', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='PASS', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=6625,
+  serialized_end=6651,
+)
+_sym_db.RegisterEnumDescriptor(_IRCUT)
+
+IrCut = enum_type_wrapper.EnumTypeWrapper(_IRCUT)
 MODULE_NONE = 0
 MODULE_CAMERA_TELE = 1
 MODULE_CAMERA_WIDE = 2
@@ -933,6 +1163,10 @@ MODULE_TRACK = 7
 MODULE_FOCUS = 8
 MODULE_NOTIFY = 9
 MODULE_PANORAMA = 10
+TYPE_REQUEST = 0
+TYPE_REQUEST_RESPONSE = 1
+TYPE_NOTIFICATION = 2
+TYPE_NOTIFICATION_RESPONSE = 3
 NO_CMD = 0
 CMD_CAMERA_TELE_OPEN_CAMERA = 10000
 CMD_CAMERA_TELE_CLOSE_CAMERA = 10001
@@ -1021,6 +1255,18 @@ CMD_SYSTEM_SET_TIME = 13000
 CMD_SYSTEM_SET_TIME_ZONE = 13001
 CMD_SYSTEM_SET_MTP_MODE = 13002
 CMD_SYSTEM_SET_CPU_MODE = 13003
+CMD_RGB_POWER_OPEN_RGB = 13500
+CMD_RGB_POWER_CLOSE_RGB = 13501
+CMD_RGB_POWER_POWER_DOWN = 13502
+CMD_RGB_POWER_POWERIND_ON = 13503
+CMD_RGB_POWER_POWERIND_OFF = 13504
+CMD_RGB_POWER_REBOOT = 13505
+CMD_FOCUS_AUTO_FOCUS = 15000
+CMD_FOCUS_MANUAL_SINGLE_STEP_FOCUS = 15001
+CMD_FOCUS_START_MANUAL_CONTINU_FOCUS = 15002
+CMD_FOCUS_STOP_MANUAL_CONTINU_FOCUS = 15003
+CMD_FOCUS_START_ASTRO_AUTO_FOCUS = 15004
+CMD_FOCUS_STOP_ASTRO_AUTO_FOCUS = 15005
 CMD_NOTIFY_TELE_WIDI_PICTURE_MATCHING = 15200
 CMD_NOTIFY_ELE = 15201
 CMD_NOTIFY_CHARGE = 15202
@@ -1051,9 +1297,7 @@ CMD_NOTIFY_WIDE_TIMELAPSE_OUT_TIME = 15226
 CMD_NOTIFY_CPU_MODE = 15227
 CMD_NOTIFY_STATE_ASTRO_TRACKING_SPECIAL = 15228
 CMD_NOTIFY_POWER_OFF = 15229
-CMD_RGB_POWER_POWER_DOWN = 13502
-CMD_RGB_POWER_REBOOT = 13505
-NO_ERROR = 0
+OK = 0
 WS_PARSE_PROTOBUF_ERROR = -1
 WS_SDCARD_NOT_EXIST = -2
 WS_INVALID_PARAM = -3
@@ -1089,12 +1333,33 @@ CODE_PANORAMA_PHOTO_FAILED = -15600
 CODE_PANORAMA_MOTOR_RESET_FAILED = -15601
 TRACKING_SUN = 0
 TRACKING_MOON = 1
+Unknown = 0
+Mercury = 1
+Venus = 2
+Mars = 3
+Jupiter = 4
+Saturn = 5
+Uranus = 6
+Neptune = 7
+Moon = 8
+Sun = 9
+Auto = 0
+Manual = 1
+ColorTemperature = 0
+SceneMode = 1
+CUT = 0
+PASS = 1
 
 
 DESCRIPTOR.enum_types_by_name['ModuleId'] = _MODULEID
-DESCRIPTOR.enum_types_by_name['AstroCMD'] = _ASTROCMD
-DESCRIPTOR.enum_types_by_name['ErrorCodeAstro'] = _ERRORCODEASTRO
+DESCRIPTOR.enum_types_by_name['MessageTypeId'] = _MESSAGETYPEID
+DESCRIPTOR.enum_types_by_name['DwarfCMD'] = _DWARFCMD
+DESCRIPTOR.enum_types_by_name['DwarfErrorCode'] = _DWARFERRORCODE
 DESCRIPTOR.enum_types_by_name['AstroTrackingSpecial'] = _ASTROTRACKINGSPECIAL
+DESCRIPTOR.enum_types_by_name['SolarSystemTarget'] = _SOLARSYSTEMTARGET
+DESCRIPTOR.enum_types_by_name['PhotoMode'] = _PHOTOMODE
+DESCRIPTOR.enum_types_by_name['WBMode'] = _WBMODE
+DESCRIPTOR.enum_types_by_name['IrCut'] = _IRCUT
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
